@@ -34,8 +34,8 @@
 ;; for deftheme and extended by Alexey Kutepov a.k.a. rexim.
 
 
-(deftheme gruber-darker
-  "Gruber Darker color theme for Emacs 24")
+(deftheme gruber-darker-modded
+  "Modded Gruber Darker color theme for Emacs 24")
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
@@ -44,11 +44,11 @@
       (gruber-darker-fg+2      "#f5f5f5")
       (gruber-darker-white     "#ffffff")
       (gruber-darker-black     "#000000")
-      (gruber-darker-bg-1      "#101010")
-      (gruber-darker-bg        "#181818")
-      (gruber-darker-bg+1      "#282828")
-      (gruber-darker-bg+2      "#453d41")
-      (gruber-darker-bg+3      "#484848")
+      (gruber-darker-bg-1      "#0F0F0F")
+      (gruber-darker-bg        "#101010")
+      (gruber-darker-bg+1      "#202020")
+      (gruber-darker-bg+2      "#353d31")
+      (gruber-darker-bg+3      "#404040")
       (gruber-darker-bg+4      "#52494e")
       (gruber-darker-red-1     "#c73c3f")
       (gruber-darker-red       "#f43841")
@@ -63,11 +63,11 @@
       (gruber-darker-wisteria  "#9e95c7")
       )
   (custom-theme-set-variables
-   'gruber-darker
+   'gruber-darker-modded
    '(frame-brackground-mode (quote dark)))
 
   (custom-theme-set-faces
-   'gruber-darker
+   'gruber-darker-modded
 
    ;; Agda2
    `(agda2-highlight-datatype-face ((t (:foreground ,gruber-darker-quartz))))
@@ -414,7 +414,7 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'gruber-darker)
+(provide-theme 'gruber-darker-modded)
 
 ;; Local Variables:
 ;; no-byte-compile: t
